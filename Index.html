@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <form id="weatherSearch">
@@ -13,12 +14,12 @@
     <h1 class = "cityNow" id = "cityNow">Paris</h1>
     <p class="nowWeatherDetails">
         <span id="nowDate"></span>, moderate rain <br />
-        Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+        Humidity: <span id ="humidityNow">87%</span>, Wind: <span id = "windNow">7.2km/h</span>
       </p>
     </div>
     <div class="tempNow">
-      <span class="nowTempIcon">☀️</span
-      ><span class="NowTempValue" id="NowTempValue"
+      <span class="nowTempIcon" id="iconNow"></span
+      ><span class="nowTempValue" id="nowTempValue"
         >24</span
       ><span class="nowUnit">°C</span>
       <footer>
@@ -40,5 +41,6 @@
           >
         </p>
       </footer>
+      <script src="src/index.js"></script>
   </body>
 </html>
